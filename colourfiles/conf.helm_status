@@ -1,0 +1,25 @@
+# Values
+
+# inside each item
+regexp=^(?!NAME)([-\w\d.]+)+\s
+colours=blue,bold blue
+======
+regexp=^([A-Z]*):
+colours=default,bold cyan
+======
+regexp=Running
+colours=green
+======
+regexp=Evicted
+colours=red
+======
+regexp=^==>.*
+colours=bold cyan
+======
+# date 'xd'
+regexp=\s\d{1}d
+colours=red
+======
+# date 'x*d'
+regexp=\s\d{2,}d
+colours=bold red
