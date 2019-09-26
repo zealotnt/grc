@@ -1,0 +1,22 @@
+# First level item
+regexp=^([^\s][-\w\s]*):
+colours=default,bold cyan
+======
+# second level item
+regexp=^(\s{2}[^\s][-\w\s]*):
+colours=default,bold blue
+======
+# third level item
+regexp=^(\s{4}[^\s][-\w\s]*):
+colours=default,cyan
+======
+# fourth level item, match all
+regexp=^(\s{6}[^\s].*)
+colours=default,yellow
+======
+# keywords
+regexp=Running
+colours=green
+======
+regexp=Evicted
+colours=red
