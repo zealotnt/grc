@@ -1,0 +1,55 @@
+# first row
+regexp=^\S*
+colours=bold blue
+======
+
+
+# Status
+regexp=Running
+colours=green
+======
+regexp=Evicted
+colours=red
+======
+regexp=Error
+colours=bold red
+======
+regexp=Completed
+colours=bold yellow
+======
+regexp=Pending
+colours=underline magenta
+======
+regexp=ContainerCreating
+colours=underline white
+======
+regexp=CrashLoopBackOff
+colours=underline bold red
+======
+
+
+
+# Time range
+# date 'xxs' -- just started
+regexp=\s(\d+s$)
+colours=default,white bold underline
+======
+# date 'xxm' -- run for couple of minutes to several hours
+regexp=\s\d+m.*$
+colours=white bold
+======
+# date 'xxm' -- run for couple of minutes to several hours
+regexp=\s(\d{1,2}h.*)$
+colours=default, underline magenta
+======
+# date 'xxh' -- run for couple of hours
+regexp=\s\d{2,}h$
+colours=red
+======
+# date 'xd' -- run for days
+regexp=\s\d{1}d.*$
+colours=red
+======
+# date 'x*d' -- run for very long time
+regexp=\s\d{2,}d$
+colours=bold red
