@@ -2,18 +2,27 @@ if [[ "$TERM" != dumb ]] && (( $+commands[grc] )) ; then
 
   # Supported commands
   cmds=(
+    blkid \
     cc \
     configure \
     cvs \
     df \
     diff \
+    du \
+    docker \
     dig \
+    env \
+    free \
     gcc \
     gmake \
     ifconfig \
+    ip \
     last \
     ldap \
     ls \
+    lsblk \
+    helm \
+    kubectl \
     make \
     mount \
     mtr \

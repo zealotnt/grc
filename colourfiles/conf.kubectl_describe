@@ -10,13 +10,21 @@ colours=default,bold blue
 regexp=^(\s{4}[^\s][-\w\s]*):
 colours=default,cyan
 ======
-# fourth level item, match all
-regexp=^(\s{6}[^\s].*)
+# fourth level item
+regexp=^(\s{6}[^\s][-\w\s]*):
 colours=default,yellow
 ======
-# keywords
-regexp=Running
-colours=green
+# Good keywords
+regexp=(Running|True)
+colours=green bold
 ======
-regexp=Evicted
-colours=red
+# Bad keywords
+regexp=(Evicted|OOMKilled|Terminated|False|CrashLoopBackOff|Error|Waiting)
+colours=underline bold red
+======
+# Docker URL
+regexp=([\w-]+:\/\/)*979797940137\.dkr\.ecr\.ap-southeast-2\.amazonaws\.com\/employmenthero(.*)
+replace=\1$ECR_REPO_HOST\2
+colours=blue underline
+======
+
