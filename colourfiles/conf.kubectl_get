@@ -5,14 +5,17 @@ colours=bold blue
 
 
 # Status
+regexp=CreateContainerConfigError
+colours=bright_red underline
+======
 regexp=Running
 colours=green
 ======
 regexp=Evicted
 colours=red
 ======
-regexp=Error
-colours=bold red
+regexp=\s(Error)
+colours=default, bold red
 ======
 regexp=Completed
 colours=bold yellow

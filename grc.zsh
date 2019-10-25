@@ -50,6 +50,7 @@ cmds=(
   lsmod
   lsof
   lspci
+  helm
   make
   mount
   mtr
