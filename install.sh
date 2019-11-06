@@ -15,7 +15,11 @@ PROFILEDIR=$CONFDIR/profile.d
 mkdir -p $BINDIR || true
 cp -fv grc grcat $BINDIR
 mkdir -p $LIBDIR || true
-cp -fv colourfiles/conf.* $LIBDIR
+
+# cp -fv colourfiles/conf.* $LIBDIR
+rm $LIBDIR/*
+ln -sf $(pwd)/colourfiles/conf.* $LIBDIR
+
 mkdir -p $MANDIR/man1
 cp -fv grc.1 $MANDIR/man1
 cp -fv grcat.1 $MANDIR/man1
