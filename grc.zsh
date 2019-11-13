@@ -87,7 +87,7 @@ cmds=(
 for cmd in $cmds ; do
   if (( $+commands[$cmd] )) ; then
     $cmd() {
-      grc --colour=auto ${commands[$0]} "$@"
+      grc --colour=$GRC_COLOR ${commands[$0]} "$@"
     }
   fi
 done
