@@ -59,11 +59,14 @@ for i in optlist:
     elif i[0] in ["--config", "-c"]:
         cfile = i[1]
     elif i[0] == "--colour":
-        if i[1] == "on":
+        colorArg = i[1]
+        if os.environ.get('GRC_COLOR') != None:
+            colorArg = os.environ.get('GRC_COLOR')
+        if colorArg == "on":
             colour = 1
-        elif i[1] == "off":
+        elif colorArg == "off":
             colour = 0
-        elif i[1] == "auto":
+        elif colorArg == "auto":
             colour = sys.stdout.isatty()
         else:
             help()
