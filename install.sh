@@ -17,7 +17,7 @@ cp -fv grc grcat $BINDIR
 mkdir -p $LIBDIR || true
 
 # cp -fv colourfiles/conf.* $LIBDIR
-rm $LIBDIR/*
+rm $LIBDIR/* || true
 ln -sf $(pwd)/colourfiles/conf.* $LIBDIR
 
 mkdir -p $MANDIR/man1
