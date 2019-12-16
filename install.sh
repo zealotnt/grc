@@ -13,7 +13,8 @@ CONFDIR=$ETCPREFIX/etc
 PROFILEDIR=$CONFDIR/profile.d
 
 mkdir -p $BINDIR || true
-cp -fv grc grcat $BINDIR
+ln -sf $(pwd)/grc $BINDIR
+ln -sf $(pwd)/grcat $BINDIR
 mkdir -p $LIBDIR || true
 
 # cp -fv colourfiles/conf.* $LIBDIR

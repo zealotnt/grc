@@ -12,6 +12,7 @@ if [[ "$TERM" != dumb ]] && (( $+commands[grc] )) ; then
     docker \
     dig \
     env \
+    fluxctl \
     free \
     gcc \
     gmake \
