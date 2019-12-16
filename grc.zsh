@@ -26,6 +26,7 @@ cmds=(
   fdisk
   findmnt
   free
+  fluxctl
   g++
   gas
   gcc

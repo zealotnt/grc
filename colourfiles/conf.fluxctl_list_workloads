@@ -1,0 +1,8 @@
+# Docker URL
+regexp=([\w-]+:\/\/)*(979797940137\.dkr\.ecr\.ap-southeast-2\.amazonaws\.com\/employmenthero)(.*)
+replace=\1$ECR_REPO_HOST/EH\3
+======
+# Docker URL
+regexp=([\w-]+:\/\/)*(979797940137\.dkr\.ecr\.ap-southeast-2\.amazonaws\.com\/)(.*)
+replace=\1$ECR_REPO_HOST/\3
+======

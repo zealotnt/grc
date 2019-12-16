@@ -1,8 +1,7 @@
 # first row
-regexp=^\S*
-colours=bold blue
-======
-
+# regexp=^\S*
+# colours=bold blue
+# ======
 
 # Status
 regexp=CreateContainerConfigError
@@ -56,3 +55,13 @@ colours=default,red,red,default
 # date 'x*d' -- run for very long time
 regexp=\s(\d{2,}d).*$
 colours=default,bold red,default
+
+
+# cpu limit/requests
+regexp=cpu: (\d+\w+)
+colours=default,white bold underline
+======
+regexp=memory: (\d+\w+)
+colours=default,white bold underline
+======
+
