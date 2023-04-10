@@ -4,17 +4,15 @@
 # ======
 
 # Status
-regexp=CreateContainerConfigError
-colours=bright_red underline
-======
 regexp=Running
 colours=green
 ======
 regexp=Evicted
 colours=red
 ======
-regexp=\s(Error)
-colours=default, bold red
+# Bad keywords
+regexp=\s(\w*Error\w*)
+colours=default, underline bold red
 ======
 regexp=(Completed|Ready)
 colours=bold yellow
@@ -64,4 +62,9 @@ colours=default,white bold underline
 regexp=memory: (\d+\w+)
 colours=default,white bold underline
 ======
+
+# or
+# cpu limit/requests
+# regexp=(cpu|memory): (\d+(s|m|Mi|Gi))$
+# colours=default,white bold underline
 
