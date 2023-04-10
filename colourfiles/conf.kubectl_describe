@@ -15,12 +15,20 @@ regexp=^(\s{6}[^\s][-\w\s]*):
 colours=default,yellow
 ======
 # Good keywords
-regexp=(Running|True)
+regexp=(Running|True|Normal|Scheduled|Pulled)
 colours=green bold
+======
+# Negative keywords
+regexp=(Warning|Failed)
+colours=bold yellow
 ======
 # Bad keywords
 regexp=(Evicted|OOMKilled|Terminated|False|CrashLoopBackOff|Error|Waiting)
 colours=underline bold red
+======
+# Bad keywords
+regexp=\s(\w+Error\w*)
+colours=default, underline bold red
 ======
 # Docker URL
 regexp=([\w-]+:\/\/)*979797940137\.dkr\.ecr\.ap-southeast-2\.amazonaws\.com\/employmenthero(.*)
